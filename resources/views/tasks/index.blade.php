@@ -15,12 +15,11 @@
                     @foreach($folders as $folder)
 
 
-                        <a href="{{ route('tasks.index', ['folder' => $folder->id]) }}"
-  class=" list-group-item {{ $current_folder_id === $folder->id ? 'active' : '' }}">
+                    <a href="{{ route('tasks.index', ['folder' => $folder->id]) }}" class=" list-group-item {{ $current_folder_id === $folder->id ? 'active' : '' }}">
 
-                            {{ $folder->title }}
-                        </a>
-                        @endforeach
+                        {{ $folder->title }}
+                    </a>
+                    @endforeach
                 </div>
             </nav>
         </div>
