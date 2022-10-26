@@ -29,7 +29,7 @@
                             <select name="status" id="status" class="form-control">
                                 @foreach(\App\Models\Task::STATUS as $key => $val)
                                 <option value="{{ $key }}" {{ $key == old('status', $task->status) ? 'selected' : '' }}>
-                                     {{ $val['label'] }}
+                                    {{ $val['label'] }}
                                 </option>
                                 @endforeach
                             </select>
